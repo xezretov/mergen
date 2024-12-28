@@ -53,4 +53,26 @@ const frontendSkills = [
     }
   }
 
-  document.addEventListener("DOMContentLoaded", showSkill);s
+  document.addEventListener("DOMContentLoaded", showSkill);
+
+
+  const text = `Hi there! 👋 My name is Mergen, and I’m a passionate Full-Stack Developer with a love for creating functional, user-friendly, and visually appealing web applications.
+
+  I thrive on challenges and continuously push myself to learn and implement the latest technologies. With a solid foundation in both front-end and back-end development, I aim to deliver seamless digital experiences.
+  
+  When I’m not coding, you’ll find me exploring new tech trends, contributing to open-source projects, or brainstorming innovative ideas to make the web a better place.
+  
+  Every project I work on is a step forward in my journey of personal and professional growth. Let’s connect and build something amazing together! 🚀
+  `;
+  
+      const typingText = document.getElementById("typingText");
+      let index = 0;
+  
+      function typeEffect() {
+        if (index < text.length) {
+          typingText.textContent += text.charAt(index); 
+          index++;
+          setTimeout(typeEffect, 10);
+        }
+      }
+      document.addEventListener("DOMContentLoaded", typeEffect);
