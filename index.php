@@ -14,7 +14,7 @@
     <div class="w-full flex flex-col lg:flex-row h-screen">
       <div class="flex-1">
         <img
-          src="./assets/images/portfolio.jpg"
+          src="./assets/images/portfolio.png"
           alt="Mergen Portfolio"
           class="h-full w-full object-cover object-top"
         />
